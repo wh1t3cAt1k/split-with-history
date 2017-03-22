@@ -16,10 +16,6 @@ param(
     [string][Alias("b2", "branch2")]
     $temporaryBranchName2 = 'temporaryhistorybranch2')
 
-# Function to extract line range from a given file into another file
-# while preserving git history in both files. Example usage:
-# splitwithhistory -s 20 -e 70 -p 'AC-82445' -o 'WebSites\Pure\PX.Objects\AR\Descriptor\Attribute.cs' -t 'WebSites\Pure\PX.Objects\AR\Descriptor\NewAttribute.cs'
-
 if (!$start) { throw New-Object System.ArgumentException "The start line -s is not specified." }
 if (!$end) { throw New-Object System.ArgumentException "The end line -e is not specified." }
 if (!$commitPrefix) { throw New-Object System.ArgumentException "The commit prefix -p is not specified." }
