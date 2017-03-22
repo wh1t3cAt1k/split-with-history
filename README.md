@@ -15,6 +15,7 @@ splitwithhistory -s 20 -e 70 -p 'AC-82445' -o 'ManyClasses.cs' -t 'SingleClass.c
 - `-s` or `-start` - the number of the first line (inclusive) to be extracted to a separate file. *Required*.
 - `-e` or `-end` - the number of the last line (inclusive) to be extracted to a separate file. *Required*.
 - `-p` or `-commitPrefix` - _optional_ prefix of the automatic commits that will be made in the git repository.
+- `-o` - the source file name, from which the specified line range will be extracted. *Required*.
 - `-t` - the target file name, to which the specified part of the source file will be extracted. *Required*.
 - `-tr` - _optional_ new name for the source file.
 - `-b1` - _optional_ name of the first temporary branch that will be used to create a necessary merge conflict. By default, equals `splitwithhistorytemporaryhistorybranch1`.
