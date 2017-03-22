@@ -1,11 +1,13 @@
 # Split With History
 
-A PowerShell script that allows to extracts a line range from the specified file into another file, preserving git history for both of them.
+Do you have monstrous files with lots of classes in your repository, but you are afraid to split them because you don't want to lose git change history?
+
+This is a PowerShell script that allows to extracts a line range from the specified file into another file, preserving git history for both of them.
 
 # Example usage:
 
 ```
-splitwithhistory -s 20 -e 70 -p 'AC-82445' -o 'WebSites\Pure\PX.Objects\AR\Descriptor\Attribute.cs' -t 'WebSites\Pure\PX.Objects\AR\Descriptor\NewAttribute.cs'
+splitwithhistory -s 20 -e 70 -p 'AC-82445' -o 'ManyClasses.cs' -t 'SingleClass.cs'
 ```
 
 # Parameters
