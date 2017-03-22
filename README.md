@@ -2,7 +2,7 @@
 
 Do you have monstrous files with lots of classes in your repository, but you are afraid to split them because you don't want to lose git change history?
 
-This is a PowerShell script that allows to extracts a line range from the specified file into another file, preserving git history for both of them.
+This is a PowerShell script that allows to extracts a line range from the specified file into another file, preserving git history for both the original file and the extracted bit.
 
 # Example usage:
 
